@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwb43o1pb51jl"]
+
+[ext_resource type="PackedScene" uid="uid://njvudl5be5lt" path="res://scenes/uis/DialogBox.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://bwcdlpled0vwh" path="res://scenes/uis/Inventory.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://6th481a3d4uv" path="res://scenes/uis/SelectedItem.tscn" id="3"]
+
+[node name="UserInterface" type="CanvasLayer"]
+process_mode = 3
+
+[node name="SelectedItem" parent="." instance=ExtResource("3")]
+
+[node name="DialogBox" parent="." instance=ExtResource("1")]
+visible = false
+
+[node name="Inventory" parent="." instance=ExtResource("2")]
+visible = false

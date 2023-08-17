@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca2xrmmc2pyk1"]
+
+[ext_resource type="TileSet" path="res://assets/resources/InsideClockTowerTileset.tres" id="1"]
+
+[node name="InsideClockTowerTileMap" type="TileMap"]
+tile_set = ExtResource("1")
+format = 2

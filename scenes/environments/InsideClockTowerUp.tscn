@@ -1,0 +1,329 @@
+[gd_scene load_steps=6 format=3 uid="uid://577hy7a6tikj"]
+
+[ext_resource type="PackedScene" uid="uid://dqyml4mp4250l" path="res://scenes/objects/WheatSheaf.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://dxmd0wmlvyvnb" path="res://scenes/triggers/DoorTrigger.tscn" id="2"]
+[ext_resource type="Script" path="res://scripts/environments/InsideClockTowerUp.gd" id="2_7rkpi"]
+[ext_resource type="PackedScene" uid="uid://b2vunnpt5n1qr" path="res://scenes/environments/BaseScene.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://ca2xrmmc2pyk1" path="res://scenes/tilemaps/InsideClockTowerTileMap.tscn" id="7"]
+
+[node name="InsideClockTowerUp" instance=ExtResource("3")]
+script = ExtResource("2_7rkpi")
+
+[node name="InsideClockTowerTileMap" parent="." index="0" instance=ExtResource("7")]
+layer_0/tile_data = PackedInt32Array(-524297, 14, 0, -524296, 14, 0, -524295, 14, 0, -524294, 14, 0, -524293, 14, 0, -524292, 14, 0, -524291, 14, 0, -524290, 14, 0, -524289, 14, 0, -589824, 14, 0, -589823, 14, 0, -589822, 14, 0, -589821, 14, 0, -589820, 14, 0, -589819, 14, 0, -589818, 14, 0, -589817, 14, 0, -589816, 14, 0, -458761, 14, 0, -458760, 16, 0, -458759, 21, 0, -458758, 21, 0, -458757, 21, 0, -458756, 21, 0, -458755, 21, 0, -458754, 21, 0, -458753, 21, 0, -524288, 21, 0, -524287, 21, 0, -524286, 21, 0, -524285, 21, 0, -524284, 21, 0, -524283, 21, 0, -524282, 21, 0, -524281, 17, 0, -524280, 14, 0, -393225, 14, 0, -393224, 12, 0, -393223, 1, 0, -393222, 1, 0, -393221, 1, 0, -393220, 1, 0, -393219, 1, 0, -393218, 1, 0, -393217, 1, 0, -458752, 1, 0, -458751, 1, 0, -458750, 1, 0, -458749, 1, 0, -458748, 1, 0, -458747, 1, 0, -458746, 1, 0, -458745, 10, 0, -458744, 14, 0, -327689, 14, 0, -327688, 12, 0, -327687, 1, 0, -327686, 1, 0, -327685, 1, 0, -327684, 1, 0, -327683, 1, 0, -327682, 1, 0, -327681, 1, 0, -393216, 1, 0, -393215, 1, 0, -393214, 1, 0, -393213, 1, 0, -393212, 1, 0, -393211, 1, 0, -393210, 1, 0, -393209, 10, 0, -393208, 14, 0, -262153, 14, 0, -262152, 12, 0, -262151, 1, 0, -262150, 1, 0, -262149, 1, 0, -262148, 1, 0, -262147, 1, 0, -262146, 1, 0, -262145, 1, 0, -327680, 1, 0, -327679, 1, 0, -327678, 1, 0, -327677, 1, 0, -327676, 1, 0, -327675, 1, 0, -327674, 1, 0, -327673, 10, 0, -327672, 14, 0, -196617, 14, 0, -196616, 12, 0, -196615, 2, 0, -196614, 2, 0, -196613, 2, 0, -196612, 2, 0, -196611, 2, 0, -196610, 2, 0, -196609, 2, 0, -262144, 2, 0, -262143, 2, 0, -262142, 2, 0, -262141, 2, 0, -262140, 2, 0, -262139, 2, 0, -262138, 2, 0, -262137, 10, 0, -262136, 14, 0, -131081, 14, 0, -131080, 12, 0, -131079, 0, 0, -131078, 0, 0, -131077, 0, 0, -131076, 0, 0, -131075, 0, 0, -131074, 0, 0, -131073, 0, 0, -196608, 0, 0, -196607, 0, 0, -196606, 0, 0, -196605, 0, 0, -196604, 3, 0, -196603, 4, 0, -196602, 4, 0, -196601, 10, 0, -196600, 14, 0, -65545, 14, 0, -65544, 12, 0, -65543, 0, 0, -65542, 0, 0, -65541, 0, 0, -65540, 0, 0, -65539, 0, 0, -65538, 0, 0, -65537, 0, 0, -131072, 0, 0, -131071, 0, 0, -131070, 0, 0, -131069, 0, 0, -131068, 20, 0, -131067, 4, 0, -131066, 4, 0, -131065, 10, 0, -131064, 14, 0, -9, 14, 0, -8, 12, 0, -7, 0, 0, -6, 0, 0, -5, 0, 0, -4, 0, 0, -3, 0, 0, -2, 0, 0, -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 23, 0, -65531, 22, 0, -65530, 22, 0, -65529, 10, 0, -65528, 14, 0, 65527, 14, 0, 65528, 12, 0, 65529, 0, 0, 65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 10, 0, 8, 14, 0, 131063, 14, 0, 131064, 12, 0, 131065, 0, 0, 131066, 0, 0, 131067, 0, 0, 131068, 0, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 10, 0, 65544, 14, 0, 196599, 14, 0, 196600, 12, 0, 196601, 0, 0, 196602, 0, 0, 196603, 0, 0, 196604, 0, 0, 196605, 0, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 10, 0, 131080, 14, 0, 262135, 14, 0, 262136, 12, 0, 262137, 0, 0, 262138, 0, 0, 262139, 0, 0, 262140, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 10, 0, 196616, 14, 0, 327671, 14, 0, 327672, 12, 0, 327673, 0, 0, 327674, 0, 0, 327675, 0, 0, 327676, 0, 0, 327677, 0, 0, 327678, 0, 0, 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 10, 0, 262152, 14, 0, 393207, 14, 0, 393208, 12, 0, 393209, 0, 0, 393210, 0, 0, 393211, 0, 0, 393212, 0, 0, 393213, 0, 0, 393214, 0, 0, 393215, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 10, 0, 327688, 14, 0, 458743, 14, 0, 458744, 12, 0, 458745, 0, 0, 458746, 0, 0, 458747, 0, 0, 458748, 0, 0, 458749, 0, 0, 458750, 0, 0, 458751, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 10, 0, 393224, 14, 0, 524279, 14, 0, 524280, 15, 0, 524281, 11, 0, 524282, 11, 0, 524283, 11, 0, 524284, 11, 0, 524285, 11, 0, 524286, 11, 0, 524287, 11, 0, 458752, 11, 0, 458753, 11, 0, 458754, 11, 0, 458755, 11, 0, 458756, 11, 0, 458757, 11, 0, 458758, 11, 0, 458759, 18, 0, 458760, 14, 0, 589815, 14, 0, 589816, 14, 0, 589817, 14, 0, 589818, 14, 0, 589819, 14, 0, 589820, 14, 0, 589821, 14, 0, 589822, 14, 0, 589823, 14, 0, 524288, 14, 0, 524289, 14, 0, 524290, 14, 0, 524291, 14, 0, 524292, 14, 0, 524293, 14, 0, 524294, 14, 0, 524295, 14, 0, 524296, 14, 0)
+
+[node name="WheatSheafs" type="Node2D" parent="." index="1"]
+
+[node name="WheatSheaf9" parent="WheatSheafs" index="0" instance=ExtResource("1")]
+position = Vector2(-75, -66)
+
+[node name="WheatSheaf8" parent="WheatSheafs" index="1" instance=ExtResource("1")]
+position = Vector2(-60, -66)
+
+[node name="WheatSheaf13" parent="WheatSheafs" index="2" instance=ExtResource("1")]
+position = Vector2(-46, -66)
+
+[node name="WheatSheaf14" parent="WheatSheafs" index="3" instance=ExtResource("1")]
+position = Vector2(-32, -66)
+
+[node name="WheatSheaf15" parent="WheatSheafs" index="4" instance=ExtResource("1")]
+position = Vector2(-19, -66)
+
+[node name="WheatSheaf16" parent="WheatSheafs" index="5" instance=ExtResource("1")]
+position = Vector2(-4, -66)
+
+[node name="WheatSheaf17" parent="WheatSheafs" index="6" instance=ExtResource("1")]
+position = Vector2(12, -64)
+
+[node name="WheatSheaf18" parent="WheatSheafs" index="7" instance=ExtResource("1")]
+position = Vector2(25, -65)
+
+[node name="WheatSheaf3" parent="WheatSheafs" index="8" instance=ExtResource("1")]
+position = Vector2(-100, -66)
+
+[node name="WheatSheaf4" parent="WheatSheafs" index="9" instance=ExtResource("1")]
+position = Vector2(-88, -66)
+
+[node name="WheatSheaf11" parent="WheatSheafs" index="10" instance=ExtResource("1")]
+position = Vector2(-88, -66)
+
+[node name="WheatSheaf5" parent="WheatSheafs" index="11" instance=ExtResource("1")]
+position = Vector2(-75, -61)
+
+[node name="WheatSheaf6" parent="WheatSheafs" index="12" instance=ExtResource("1")]
+position = Vector2(-100, -53)
+
+[node name="WheatSheaf7" parent="WheatSheafs" index="13" instance=ExtResource("1")]
+position = Vector2(-87, -52)
+
+[node name="WheatSheaf10" parent="WheatSheafs" index="14" instance=ExtResource("1")]
+position = Vector2(-72, -52)
+
+[node name="WheatSheaf22" parent="WheatSheafs" index="15" instance=ExtResource("1")]
+position = Vector2(-19, -54)
+
+[node name="WheatSheaf23" parent="WheatSheafs" index="16" instance=ExtResource("1")]
+position = Vector2(-4, -52)
+
+[node name="WheatSheaf20" parent="WheatSheafs" index="17" instance=ExtResource("1")]
+position = Vector2(-46, -54)
+
+[node name="WheatSheaf12" parent="WheatSheafs" index="18" instance=ExtResource("1")]
+position = Vector2(-62, -52)
+
+[node name="WheatSheaf24" parent="WheatSheafs" index="19" instance=ExtResource("1")]
+position = Vector2(10, -50)
+
+[node name="WheatSheaf25" parent="WheatSheafs" index="20" instance=ExtResource("1")]
+position = Vector2(23, -50)
+
+[node name="WheatSheaf21" parent="WheatSheafs" index="21" instance=ExtResource("1")]
+position = Vector2(-33, -54)
+
+[node name="WheatSheaf27" parent="WheatSheafs" index="22" instance=ExtResource("1")]
+position = Vector2(-99, -42)
+
+[node name="WheatSheaf28" parent="WheatSheafs" index="23" instance=ExtResource("1")]
+position = Vector2(-86, -41)
+
+[node name="WheatSheaf29" parent="WheatSheafs" index="24" instance=ExtResource("1")]
+position = Vector2(-71, -41)
+
+[node name="WheatSheaf30" parent="WheatSheafs" index="25" instance=ExtResource("1")]
+position = Vector2(-18, -43)
+
+[node name="WheatSheaf31" parent="WheatSheafs" index="26" instance=ExtResource("1")]
+position = Vector2(-3, -41)
+
+[node name="WheatSheaf32" parent="WheatSheafs" index="27" instance=ExtResource("1")]
+position = Vector2(-45, -43)
+
+[node name="WheatSheaf33" parent="WheatSheafs" index="28" instance=ExtResource("1")]
+position = Vector2(-61, -41)
+
+[node name="WheatSheaf34" parent="WheatSheafs" index="29" instance=ExtResource("1")]
+position = Vector2(11, -39)
+
+[node name="WheatSheaf35" parent="WheatSheafs" index="30" instance=ExtResource("1")]
+position = Vector2(24, -39)
+
+[node name="WheatSheaf37" parent="WheatSheafs" index="31" instance=ExtResource("1")]
+position = Vector2(-32, -43)
+
+[node name="WheatSheaf38" parent="WheatSheafs" index="32" instance=ExtResource("1")]
+position = Vector2(-99, -31)
+
+[node name="WheatSheaf39" parent="WheatSheafs" index="33" instance=ExtResource("1")]
+position = Vector2(-86, -30)
+
+[node name="WheatSheaf40" parent="WheatSheafs" index="34" instance=ExtResource("1")]
+position = Vector2(-71, -30)
+
+[node name="WheatSheaf41" parent="WheatSheafs" index="35" instance=ExtResource("1")]
+position = Vector2(-18, -32)
+
+[node name="WheatSheaf42" parent="WheatSheafs" index="36" instance=ExtResource("1")]
+position = Vector2(-3, -30)
+
+[node name="WheatSheaf43" parent="WheatSheafs" index="37" instance=ExtResource("1")]
+position = Vector2(-45, -32)
+
+[node name="WheatSheaf44" parent="WheatSheafs" index="38" instance=ExtResource("1")]
+position = Vector2(-61, -30)
+
+[node name="WheatSheaf45" parent="WheatSheafs" index="39" instance=ExtResource("1")]
+position = Vector2(11, -28)
+
+[node name="WheatSheaf46" parent="WheatSheafs" index="40" instance=ExtResource("1")]
+position = Vector2(24, -28)
+
+[node name="WheatSheaf48" parent="WheatSheafs" index="41" instance=ExtResource("1")]
+position = Vector2(-32, -32)
+
+[node name="WheatSheaf49" parent="WheatSheafs" index="42" instance=ExtResource("1")]
+position = Vector2(-99, -20)
+
+[node name="WheatSheaf50" parent="WheatSheafs" index="43" instance=ExtResource("1")]
+position = Vector2(-86, -19)
+
+[node name="WheatSheaf51" parent="WheatSheafs" index="44" instance=ExtResource("1")]
+position = Vector2(-71, -19)
+
+[node name="WheatSheaf52" parent="WheatSheafs" index="45" instance=ExtResource("1")]
+position = Vector2(-18, -21)
+
+[node name="WheatSheaf53" parent="WheatSheafs" index="46" instance=ExtResource("1")]
+position = Vector2(-3, -19)
+
+[node name="WheatSheaf54" parent="WheatSheafs" index="47" instance=ExtResource("1")]
+position = Vector2(-45, -21)
+
+[node name="WheatSheaf55" parent="WheatSheafs" index="48" instance=ExtResource("1")]
+position = Vector2(-61, -19)
+
+[node name="WheatSheaf56" parent="WheatSheafs" index="49" instance=ExtResource("1")]
+position = Vector2(11, -17)
+
+[node name="WheatSheaf57" parent="WheatSheafs" index="50" instance=ExtResource("1")]
+position = Vector2(24, -17)
+
+[node name="WheatSheaf59" parent="WheatSheafs" index="51" instance=ExtResource("1")]
+position = Vector2(-32, -21)
+
+[node name="WheatSheaf60" parent="WheatSheafs" index="52" instance=ExtResource("1")]
+position = Vector2(-99, -9)
+
+[node name="WheatSheaf61" parent="WheatSheafs" index="53" instance=ExtResource("1")]
+position = Vector2(-86, -8)
+
+[node name="WheatSheaf62" parent="WheatSheafs" index="54" instance=ExtResource("1")]
+position = Vector2(-71, -8)
+
+[node name="WheatSheaf63" parent="WheatSheafs" index="55" instance=ExtResource("1")]
+position = Vector2(-18, -10)
+
+[node name="WheatSheaf64" parent="WheatSheafs" index="56" instance=ExtResource("1")]
+position = Vector2(-3, -8)
+
+[node name="WheatSheaf65" parent="WheatSheafs" index="57" instance=ExtResource("1")]
+position = Vector2(-45, -10)
+
+[node name="WheatSheaf66" parent="WheatSheafs" index="58" instance=ExtResource("1")]
+position = Vector2(-61, -8)
+
+[node name="WheatSheaf67" parent="WheatSheafs" index="59" instance=ExtResource("1")]
+position = Vector2(11, -6)
+
+[node name="WheatSheaf68" parent="WheatSheafs" index="60" instance=ExtResource("1")]
+position = Vector2(24, -6)
+
+[node name="WheatSheaf70" parent="WheatSheafs" index="61" instance=ExtResource("1")]
+position = Vector2(-32, -10)
+
+[node name="WheatSheaf71" parent="WheatSheafs" index="62" instance=ExtResource("1")]
+position = Vector2(-99, 3)
+
+[node name="WheatSheaf72" parent="WheatSheafs" index="63" instance=ExtResource("1")]
+position = Vector2(-86, 4)
+
+[node name="WheatSheaf73" parent="WheatSheafs" index="64" instance=ExtResource("1")]
+position = Vector2(-71, 4)
+
+[node name="WheatSheaf74" parent="WheatSheafs" index="65" instance=ExtResource("1")]
+position = Vector2(-18, 2)
+
+[node name="WheatSheaf75" parent="WheatSheafs" index="66" instance=ExtResource("1")]
+position = Vector2(-3, 4)
+
+[node name="WheatSheaf76" parent="WheatSheafs" index="67" instance=ExtResource("1")]
+position = Vector2(-45, 2)
+
+[node name="WheatSheaf77" parent="WheatSheafs" index="68" instance=ExtResource("1")]
+position = Vector2(-61, 4)
+
+[node name="WheatSheaf78" parent="WheatSheafs" index="69" instance=ExtResource("1")]
+position = Vector2(11, 6)
+
+[node name="WheatSheaf79" parent="WheatSheafs" index="70" instance=ExtResource("1")]
+position = Vector2(24, 6)
+
+[node name="WheatSheaf81" parent="WheatSheafs" index="71" instance=ExtResource("1")]
+position = Vector2(-32, 2)
+
+[node name="WheatSheaf82" parent="WheatSheafs" index="72" instance=ExtResource("1")]
+position = Vector2(-101, 14)
+
+[node name="WheatSheaf83" parent="WheatSheafs" index="73" instance=ExtResource("1")]
+position = Vector2(-88, 15)
+
+[node name="WheatSheaf84" parent="WheatSheafs" index="74" instance=ExtResource("1")]
+position = Vector2(-73, 15)
+
+[node name="WheatSheaf85" parent="WheatSheafs" index="75" instance=ExtResource("1")]
+position = Vector2(-20, 13)
+
+[node name="WheatSheaf86" parent="WheatSheafs" index="76" instance=ExtResource("1")]
+position = Vector2(-5, 15)
+
+[node name="WheatSheaf87" parent="WheatSheafs" index="77" instance=ExtResource("1")]
+position = Vector2(-47, 13)
+
+[node name="WheatSheaf88" parent="WheatSheafs" index="78" instance=ExtResource("1")]
+position = Vector2(-63, 15)
+
+[node name="WheatSheaf89" parent="WheatSheafs" index="79" instance=ExtResource("1")]
+position = Vector2(9, 17)
+
+[node name="WheatSheaf90" parent="WheatSheafs" index="80" instance=ExtResource("1")]
+position = Vector2(22, 17)
+
+[node name="WheatSheaf92" parent="WheatSheafs" index="81" instance=ExtResource("1")]
+position = Vector2(-34, 13)
+
+[node name="WheatSheaf93" parent="WheatSheafs" index="82" instance=ExtResource("1")]
+position = Vector2(-96, 27)
+
+[node name="WheatSheaf94" parent="WheatSheafs" index="83" instance=ExtResource("1")]
+position = Vector2(-83, 28)
+
+[node name="WheatSheaf95" parent="WheatSheafs" index="84" instance=ExtResource("1")]
+position = Vector2(-68, 28)
+
+[node name="WheatSheaf96" parent="WheatSheafs" index="85" instance=ExtResource("1")]
+position = Vector2(-15, 26)
+
+[node name="WheatSheaf97" parent="WheatSheafs" index="86" instance=ExtResource("1")]
+position = Vector2(0, 28)
+
+[node name="WheatSheaf98" parent="WheatSheafs" index="87" instance=ExtResource("1")]
+position = Vector2(-42, 26)
+
+[node name="WheatSheaf99" parent="WheatSheafs" index="88" instance=ExtResource("1")]
+position = Vector2(-58, 28)
+
+[node name="WheatSheaf100" parent="WheatSheafs" index="89" instance=ExtResource("1")]
+position = Vector2(14, 30)
+
+[node name="WheatSheaf101" parent="WheatSheafs" index="90" instance=ExtResource("1")]
+position = Vector2(27, 30)
+
+[node name="WheatSheaf103" parent="WheatSheafs" index="91" instance=ExtResource("1")]
+position = Vector2(-29, 26)
+
+[node name="WheatSheaf104" parent="WheatSheafs" index="92" instance=ExtResource("1")]
+position = Vector2(-101, 38)
+
+[node name="WheatSheaf105" parent="WheatSheafs" index="93" instance=ExtResource("1")]
+position = Vector2(-88, 39)
+
+[node name="WheatSheaf106" parent="WheatSheafs" index="94" instance=ExtResource("1")]
+position = Vector2(-73, 39)
+
+[node name="WheatSheaf107" parent="WheatSheafs" index="95" instance=ExtResource("1")]
+position = Vector2(-20, 37)
+
+[node name="WheatSheaf108" parent="WheatSheafs" index="96" instance=ExtResource("1")]
+position = Vector2(-5, 39)
+
+[node name="WheatSheaf109" parent="WheatSheafs" index="97" instance=ExtResource("1")]
+position = Vector2(-47, 37)
+
+[node name="WheatSheaf110" parent="WheatSheafs" index="98" instance=ExtResource("1")]
+position = Vector2(-63, 39)
+
+[node name="WheatSheaf111" parent="WheatSheafs" index="99" instance=ExtResource("1")]
+position = Vector2(9, 41)
+
+[node name="WheatSheaf112" parent="WheatSheafs" index="100" instance=ExtResource("1")]
+position = Vector2(22, 41)
+
+[node name="WheatSheaf114" parent="WheatSheafs" index="101" instance=ExtResource("1")]
+position = Vector2(-34, 37)
+
+[node name="Niko" parent="Node2D" index="0"]
+position = Vector2(93, -34)
+
+[node name="DoorTrigger" parent="." index="4" instance=ExtResource("2")]
+position = Vector2(93, -17)
+scale = Vector2(2, 0.1)
+target_scene_path = "res://scenes/environments/InsideClockTower.tscn"

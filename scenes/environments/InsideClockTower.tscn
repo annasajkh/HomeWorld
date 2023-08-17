@@ -1,0 +1,334 @@
+[gd_scene load_steps=6 format=3 uid="uid://barcsfyvpwc2i"]
+
+[ext_resource type="PackedScene" uid="uid://dqyml4mp4250l" path="res://scenes/objects/WheatSheaf.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://dxmd0wmlvyvnb" path="res://scenes/triggers/DoorTrigger.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://b2vunnpt5n1qr" path="res://scenes/environments/BaseScene.tscn" id="4"]
+[ext_resource type="Script" path="res://scripts/environments/InsideClockTower.gd" id="5"]
+[ext_resource type="PackedScene" uid="uid://ca2xrmmc2pyk1" path="res://scenes/tilemaps/InsideClockTowerTileMap.tscn" id="7"]
+
+[node name="InsideClockTower" instance=ExtResource("4")]
+script = ExtResource("5")
+
+[node name="InsideClockTowerTileMap" parent="." index="0" instance=ExtResource("7")]
+layer_0/tile_data = PackedInt32Array(-524295, 14, 0, -524294, 14, 0, -524293, 14, 0, -524292, 14, 0, -524291, 14, 0, -524290, 14, 0, -524289, 14, 0, -589824, 14, 0, -589823, 14, 0, -589822, 14, 0, -589821, 14, 0, -589820, 14, 0, -589819, 14, 0, -589818, 14, 0, -589817, 14, 0, -589816, 14, 0, -458759, 21, 0, -458758, 21, 0, -458757, 21, 0, -458756, 21, 0, -458755, 21, 0, -458754, 21, 0, -458753, 21, 0, -524288, 21, 0, -524287, 21, 0, -524286, 21, 0, -524285, 21, 0, -524284, 17, 0, -524283, 14, 0, -524282, 14, 0, -524281, 14, 0, -524280, 16, 0, -393223, 1, 0, -393222, 1, 0, -393221, 1, 0, -393220, 1, 0, -393219, 1, 0, -393218, 1, 0, -393217, 1, 0, -458752, 1, 0, -458751, 1, 0, -458750, 1, 0, -458749, 1, 0, -458748, 19, 0, -458747, 4, 0, -458746, 4, 0, -458745, 10, 0, -458744, 12, 0, -327687, 1, 0, -327686, 1, 0, -327685, 1, 0, -327684, 1, 0, -327683, 1, 0, -327682, 1, 0, -327681, 1, 0, -393216, 1, 0, -393215, 1, 0, -393214, 1, 0, -393213, 1, 0, -393212, 19, 0, -393211, 4, 0, -393210, 4, 0, -393209, 10, 0, -393208, 12, 0, -262151, 1, 0, -262150, 1, 0, -262149, 1, 0, -262148, 1, 0, -262147, 1, 0, -262146, 1, 0, -262145, 1, 0, -327680, 1, 0, -327679, 1, 0, -327678, 1, 0, -327677, 1, 0, -327676, 19, 0, -327675, 4, 0, -327674, 4, 0, -327673, 10, 0, -327672, 12, 0, -196615, 2, 0, -196614, 2, 0, -196613, 2, 0, -196612, 2, 0, -196611, 2, 0, -196610, 2, 0, -196609, 2, 0, -262144, 2, 0, -262143, 2, 0, -262142, 2, 0, -262141, 2, 0, -262140, 13, 0, -262139, 4, 0, -262138, 4, 0, -262137, 10, 0, -262136, 12, 0, -131079, 0, 0, -131078, 0, 0, -131077, 0, 0, -131076, 0, 0, -131075, 0, 0, -131074, 0, 0, -131073, 0, 0, -196608, 0, 0, -196607, 0, 0, -196606, 0, 0, -196605, 0, 0, -196604, 3, 0, -196603, 4, 0, -196602, 4, 0, -196601, 10, 0, -196600, 12, 0, -65543, 0, 0, -65542, 0, 0, -65541, 0, 0, -65540, 0, 0, -65539, 0, 0, -65538, 0, 0, -65537, 0, 0, -131072, 0, 0, -131071, 0, 0, -131070, 0, 0, -131069, 0, 0, -131068, 20, 0, -131067, 4, 0, -131066, 4, 0, -131065, 10, 0, -131064, 12, 0, -7, 0, 0, -6, 0, 0, -5, 0, 0, -4, 0, 0, -3, 0, 0, -2, 0, 0, -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 10, 0, -65528, 12, 0, 65529, 0, 0, 65530, 0, 0, 65531, 0, 0, 65532, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 10, 0, 8, 12, 0, 131065, 0, 0, 131066, 0, 0, 131067, 0, 0, 131068, 0, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 10, 0, 65544, 12, 0, 196601, 0, 0, 196602, 0, 0, 196603, 0, 0, 196604, 0, 0, 196605, 0, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 10, 0, 131080, 12, 0, 262137, 0, 0, 262138, 0, 0, 262139, 0, 0, 262140, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 10, 0, 196616, 12, 0, 327673, 0, 0, 327674, 0, 0, 327675, 0, 0, 327676, 0, 0, 327677, 0, 0, 327678, 0, 0, 327679, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 7, 0, 262152, 6, 0, 262153, 0, 65536, 393209, 0, 0, 393210, 0, 0, 393211, 0, 0, 393212, 0, 0, 393213, 0, 0, 393214, 0, 0, 393215, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 458745, 0, 0, 458746, 0, 0, 458747, 0, 0, 458748, 0, 0, 458749, 0, 0, 458750, 0, 0, 458751, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 524281, 11, 0, 524282, 11, 0, 524283, 11, 0, 524284, 11, 0, 524285, 11, 0, 524286, 9, 0, 524287, 0, 0, 458752, 0, 0, 458753, 8, 0, 458754, 11, 0, 458755, 11, 0, 458756, 11, 0, 458757, 11, 0, 458758, 11, 0, 458759, 11, 0, 458760, 11, 0, 458761, 11, 65536, 589817, 14, 0, 589818, 14, 0, 589819, 14, 0, 589820, 14, 0, 589821, 14, 0, 589822, 15, 0, 589823, 11, 0, 524288, 11, 0, 524289, 18, 0, 524290, 14, 0, 524291, 14, 0, 524292, 14, 0, 524293, 14, 0, 524294, 14, 0, 524295, 14, 0, 524296, 14, 0, -524312, 14, 0, -458776, 14, 0, -393240, 14, 0, -327704, 14, 0, -262168, 14, 0, -196632, 14, 0, -131096, 14, 0, -65560, 14, 0, -24, 14, 0, 65512, 14, 0, 131048, 14, 0, 196584, 14, 0, 262120, 14, 0, 327656, 14, 0, 393192, 14, 0, 458728, 14, 0, 524264, 14, 0, 589800, 14, 0, -524311, 14, 0, -458775, 16, 0, -393239, 12, 0, -327703, 12, 0, -262167, 12, 0, -196631, 12, 0, -131095, 12, 0, -65559, 12, 0, -23, 12, 0, 65513, 12, 0, 131049, 12, 0, 196585, 12, 0, 262121, 12, 0, 327657, 12, 0, 393193, 12, 0, 458729, 12, 0, 524265, 16, 393216, 589801, 14, 0, -524310, 14, 0, -458774, 21, 0, -393238, 1, 0, -327702, 1, 0, -262166, 1, 0, -196630, 2, 0, -131094, 0, 65536, -65558, 0, 65536, -22, 0, 65536, 65514, 0, 65536, 131050, 0, 65536, 196586, 0, 65536, 262122, 0, 65536, 327658, 0, 65536, 393194, 0, 65536, 458730, 0, 65536, 524266, 11, 65536, 589802, 14, 0, -524309, 14, 0, -458773, 21, 0, -393237, 1, 0, -327701, 1, 0, -262165, 1, 0, -196629, 2, 0, -131093, 0, 65536, -65557, 0, 65536, -21, 0, 65536, 65515, 0, 65536, 131051, 0, 65536, 196587, 0, 65536, 262123, 0, 65536, 327659, 0, 65536, 393195, 0, 65536, 458731, 0, 65536, 524267, 11, 65536, 589803, 14, 0, -524308, 14, 0, -458772, 21, 0, -393236, 1, 0, -327700, 1, 0, -262164, 1, 0, -196628, 2, 0, -131092, 0, 65536, -65556, 0, 65536, -20, 0, 65536, 65516, 0, 65536, 131052, 0, 65536, 196588, 0, 65536, 262124, 0, 65536, 327660, 0, 65536, 393196, 0, 65536, 458732, 0, 65536, 524268, 11, 65536, 589804, 14, 0, -524307, 14, 0, -458771, 21, 0, -393235, 1, 0, -327699, 1, 0, -262163, 1, 0, -196627, 2, 0, -131091, 0, 65536, -65555, 0, 65536, -19, 0, 65536, 65517, 0, 65536, 131053, 0, 65536, 196589, 0, 65536, 262125, 0, 65536, 327661, 0, 65536, 393197, 0, 65536, 458733, 0, 65536, 524269, 11, 65536, 589805, 14, 0, -524306, 14, 0, -458770, 21, 0, -393234, 1, 0, -327698, 1, 0, -262162, 1, 0, -196626, 2, 0, -131090, 0, 65536, -65554, 0, 65536, -18, 0, 65536, 65518, 0, 65536, 131054, 0, 65536, 196590, 0, 65536, 262126, 0, 65536, 327662, 0, 65536, 393198, 0, 65536, 458734, 0, 65536, 524270, 11, 65536, 589806, 14, 0, -524305, 14, 0, -458769, 21, 0, -393233, 1, 0, -327697, 1, 0, -262161, 1, 0, -196625, 2, 0, -131089, 0, 65536, -65553, 0, 65536, -17, 0, 65536, 65519, 0, 65536, 131055, 0, 65536, 196591, 0, 65536, 262127, 0, 65536, 327663, 0, 65536, 393199, 0, 65536, 458735, 0, 65536, 524271, 11, 65536, 589807, 14, 0, -524304, 14, 0, -458768, 21, 0, -393232, 1, 0, -327696, 1, 0, -262160, 1, 0, -196624, 2, 0, -131088, 0, 65536, -65552, 0, 65536, -16, 0, 65536, 65520, 0, 65536, 131056, 0, 65536, 196592, 0, 65536, 262128, 0, 65536, 327664, 0, 65536, 393200, 0, 65536, 458736, 0, 65536, 524272, 11, 65536, 589808, 14, 0, -524303, 14, 0, -458767, 21, 0, -393231, 1, 0, -327695, 1, 0, -262159, 1, 0, -196623, 2, 0, -131087, 0, 65536, -65551, 0, 65536, -15, 0, 65536, 65521, 0, 65536, 131057, 0, 65536, 196593, 0, 65536, 262129, 0, 65536, 327665, 0, 65536, 393201, 0, 65536, 458737, 0, 65536, 524273, 11, 65536, 589809, 14, 0, -524302, 14, 0, -458766, 21, 0, -393230, 1, 0, -327694, 1, 0, -262158, 1, 0, -196622, 2, 0, -131086, 0, 65536, -65550, 0, 65536, -14, 0, 65536, 65522, 0, 65536, 131058, 0, 65536, 196594, 0, 65536, 262130, 0, 65536, 327666, 0, 65536, 393202, 0, 65536, 458738, 0, 65536, 524274, 11, 65536, 589810, 14, 0, -524301, 14, 0, -458765, 21, 0, -393229, 1, 0, -327693, 1, 0, -262157, 1, 0, -196621, 2, 0, -131085, 0, 65536, -65549, 0, 65536, -13, 0, 65536, 65523, 0, 65536, 131059, 0, 65536, 196595, 0, 65536, 262131, 0, 65536, 327667, 0, 65536, 393203, 0, 65536, 458739, 0, 65536, 524275, 11, 65536, 589811, 14, 0, -524300, 14, 0, -458764, 21, 0, -393228, 1, 0, -327692, 1, 0, -262156, 1, 0, -196620, 2, 0, -131084, 0, 65536, -65548, 0, 65536, -12, 0, 65536, 65524, 0, 65536, 131060, 0, 65536, 196596, 0, 65536, 262132, 0, 65536, 327668, 0, 65536, 393204, 0, 65536, 458740, 0, 65536, 524276, 11, 65536, 589812, 14, 0, -524299, 14, 0, -458763, 21, 0, -393227, 1, 0, -327691, 1, 0, -262155, 1, 0, -196619, 2, 0, -131083, 0, 65536, -65547, 0, 65536, -11, 0, 65536, 65525, 0, 65536, 131061, 0, 65536, 196597, 0, 65536, 262133, 0, 65536, 327669, 0, 0, 393205, 0, 65536, 458741, 0, 65536, 524277, 11, 65536, 589813, 14, 0, -524298, 14, 0, -458762, 21, 0, -393226, 1, 0, -327690, 1, 0, -262154, 1, 0, -196618, 2, 0, -131082, 0, 65536, -65546, 0, 65536, -10, 0, 65536, 65526, 0, 65536, 131062, 0, 65536, 196598, 0, 65536, 262134, 0, 65536, 327670, 0, 0, 393206, 0, 65536, 458742, 0, 65536, 524278, 11, 65536, 589814, 14, 0, -524297, 14, 0, -458761, 16, 327680, -393225, 10, 0, -327689, 10, 0, -262153, 10, 0, -196617, 10, 0, -131081, 10, 0, -65545, 10, 0, -9, 10, 0, 65527, 10, 0, 131063, 10, 0, 196599, 10, 0, 262135, 10, 0, 327671, 7, 0, 393207, 0, 0, 458743, 0, 0, 524279, 11, 0, 589815, 14, 0, -524296, 14, 0, -458760, 16, 0, -393224, 12, 0, -327688, 12, 0, -262152, 12, 0, -196616, 12, 0, -131080, 12, 0, -65544, 12, 0, -8, 12, 0, 65528, 12, 0, 131064, 12, 0, 196600, 12, 0, 262136, 12, 0, 327672, 6, 0, 393208, 0, 0, 458744, 0, 0, 524280, 11, 0, 589816, 14, 0, -589815, 14, 0, -524279, 21, 0, -458743, 1, 0, -393207, 1, 0, -327671, 1, 0, -262135, 2, 0, -196599, 0, 65536, -131063, 0, 65536, -65527, 0, 65536, 9, 0, 65536, 65545, 0, 65536, 131081, 0, 65536, 196617, 0, 65536, 327689, 0, 0, 393225, 0, 0, 524297, 14, 0, -589814, 14, 0, -524278, 21, 0, -458742, 1, 0, -393206, 1, 0, -327670, 1, 0, -262134, 2, 0, -196598, 0, 65536, -131062, 0, 65536, -65526, 0, 65536, 10, 0, 65536, 65546, 0, 65536, 131082, 0, 65536, 196618, 0, 65536, 262154, 0, 65536, 327690, 0, 65536, 393226, 0, 65536, 458762, 11, 65536, 524298, 14, 0, -589813, 14, 0, -524277, 21, 0, -458741, 1, 0, -393205, 1, 0, -327669, 1, 0, -262133, 2, 0, -196597, 0, 65536, -131061, 0, 65536, -65525, 0, 65536, 11, 0, 65536, 65547, 0, 65536, 131083, 0, 65536, 196619, 0, 65536, 262155, 0, 65536, 327691, 0, 65536, 393227, 0, 65536, 458763, 11, 65536, 524299, 14, 0, -589812, 14, 0, -524276, 21, 0, -458740, 1, 0, -393204, 1, 0, -327668, 1, 0, -262132, 2, 0, -196596, 0, 65536, -131060, 0, 65536, -65524, 0, 65536, 12, 0, 65536, 65548, 0, 65536, 131084, 0, 65536, 196620, 0, 65536, 262156, 0, 65536, 327692, 0, 65536, 393228, 0, 65536, 458764, 11, 65536, 524300, 14, 0, -589811, 14, 0, -524275, 21, 0, -458739, 1, 0, -393203, 1, 0, -327667, 1, 0, -262131, 2, 0, -196595, 0, 65536, -131059, 0, 65536, -65523, 0, 65536, 13, 0, 65536, 65549, 0, 65536, 131085, 0, 65536, 196621, 0, 65536, 262157, 0, 65536, 327693, 0, 65536, 393229, 0, 65536, 458765, 11, 65536, 524301, 14, 0, -589810, 14, 0, -524274, 21, 0, -458738, 1, 0, -393202, 1, 0, -327666, 1, 0, -262130, 2, 0, -196594, 0, 65536, -131058, 0, 65536, -65522, 0, 65536, 14, 0, 65536, 65550, 0, 65536, 131086, 0, 65536, 196622, 0, 65536, 262158, 0, 65536, 327694, 0, 65536, 393230, 0, 65536, 458766, 11, 65536, 524302, 14, 0, -589809, 14, 0, -524273, 21, 0, -458737, 1, 0, -393201, 1, 0, -327665, 1, 0, -262129, 2, 0, -196593, 0, 65536, -131057, 0, 65536, -65521, 0, 65536, 15, 0, 65536, 65551, 0, 65536, 131087, 0, 65536, 196623, 0, 65536, 262159, 0, 65536, 327695, 0, 65536, 393231, 0, 65536, 458767, 11, 65536, 524303, 14, 0, -589808, 14, 0, -524272, 21, 0, -458736, 1, 0, -393200, 1, 0, -327664, 1, 0, -262128, 2, 0, -196592, 0, 65536, -131056, 0, 65536, -65520, 0, 65536, 16, 0, 65536, 65552, 0, 65536, 131088, 0, 65536, 196624, 0, 65536, 262160, 0, 65536, 327696, 0, 65536, 393232, 0, 65536, 458768, 11, 65536, 524304, 14, 0, -589807, 14, 0, -524271, 21, 0, -458735, 1, 0, -393199, 1, 0, -327663, 1, 0, -262127, 2, 0, -196591, 0, 65536, -131055, 0, 65536, -65519, 0, 65536, 17, 0, 65536, 65553, 0, 65536, 131089, 0, 65536, 196625, 0, 65536, 262161, 0, 65536, 327697, 0, 65536, 393233, 0, 65536, 458769, 11, 65536, 524305, 14, 0, -589806, 14, 0, -524270, 21, 0, -458734, 1, 0, -393198, 1, 0, -327662, 1, 0, -262126, 2, 0, -196590, 0, 65536, -131054, 0, 65536, -65518, 0, 65536, 18, 0, 65536, 65554, 0, 65536, 131090, 0, 65536, 196626, 0, 65536, 262162, 0, 65536, 327698, 0, 65536, 393234, 0, 65536, 458770, 11, 65536, 524306, 14, 0, -589805, 14, 0, -524269, 21, 0, -458733, 1, 0, -393197, 1, 0, -327661, 1, 0, -262125, 2, 0, -196589, 0, 65536, -131053, 0, 65536, -65517, 0, 65536, 19, 0, 65536, 65555, 0, 65536, 131091, 0, 65536, 196627, 0, 65536, 262163, 0, 65536, 327699, 0, 65536, 393235, 0, 65536, 458771, 11, 65536, 524307, 14, 0, -589804, 14, 0, -524268, 21, 0, -458732, 1, 0, -393196, 1, 0, -327660, 1, 0, -262124, 2, 0, -196588, 0, 65536, -131052, 0, 65536, -65516, 0, 65536, 20, 0, 65536, 65556, 0, 65536, 131092, 0, 65536, 196628, 0, 65536, 262164, 0, 0, 327700, 0, 65536, 393236, 0, 65536, 458772, 11, 65536, 524308, 14, 0, -589803, 14, 0, -524267, 21, 0, -458731, 1, 0, -393195, 1, 0, -327659, 1, 0, -262123, 2, 0, -196587, 0, 65536, -131051, 0, 65536, -65515, 0, 65536, 21, 0, 65536, 65557, 0, 65536, 131093, 0, 65536, 196629, 0, 65536, 262165, 0, 0, 327701, 0, 65536, 393237, 0, 65536, 458773, 11, 65536, 524309, 14, 0, -589802, 14, 0, -524266, 16, 327680, -458730, 10, 0, -393194, 10, 0, -327658, 10, 0, -262122, 10, 0, -196586, 10, 0, -131050, 10, 0, -65514, 10, 0, 22, 10, 0, 65558, 10, 0, 131094, 10, 0, 196630, 10, 0, 262166, 10, 0, 327702, 10, 0, 393238, 10, 0, 458774, 16, 196608, 524310, 14, 0, -589801, 14, 0, -524265, 14, 0, -458729, 14, 0, -393193, 14, 0, -327657, 14, 0, -262121, 14, 0, -196585, 14, 0, -131049, 14, 0, -65513, 14, 0, 23, 14, 0, 65559, 14, 0, 131095, 14, 0, 196631, 14, 0, 262167, 14, 0, 327703, 14, 0, 393239, 14, 0, 458775, 14, 0, 524311, 14, 0)
+
+[node name="WheatSheafs" type="Node2D" parent="." index="1"]
+
+[node name="WheatSheaf9" parent="WheatSheafs" index="0" instance=ExtResource("1")]
+position = Vector2(-75, -66)
+
+[node name="WheatSheaf8" parent="WheatSheafs" index="1" instance=ExtResource("1")]
+position = Vector2(-60, -66)
+
+[node name="WheatSheaf13" parent="WheatSheafs" index="2" instance=ExtResource("1")]
+position = Vector2(-46, -66)
+
+[node name="WheatSheaf14" parent="WheatSheafs" index="3" instance=ExtResource("1")]
+position = Vector2(-32, -66)
+
+[node name="WheatSheaf15" parent="WheatSheafs" index="4" instance=ExtResource("1")]
+position = Vector2(-19, -66)
+
+[node name="WheatSheaf16" parent="WheatSheafs" index="5" instance=ExtResource("1")]
+position = Vector2(-4, -66)
+
+[node name="WheatSheaf17" parent="WheatSheafs" index="6" instance=ExtResource("1")]
+position = Vector2(12, -64)
+
+[node name="WheatSheaf18" parent="WheatSheafs" index="7" instance=ExtResource("1")]
+position = Vector2(25, -65)
+
+[node name="WheatSheaf3" parent="WheatSheafs" index="8" instance=ExtResource("1")]
+position = Vector2(-100, -66)
+
+[node name="WheatSheaf4" parent="WheatSheafs" index="9" instance=ExtResource("1")]
+position = Vector2(-88, -66)
+
+[node name="WheatSheaf11" parent="WheatSheafs" index="10" instance=ExtResource("1")]
+position = Vector2(-88, -66)
+
+[node name="WheatSheaf5" parent="WheatSheafs" index="11" instance=ExtResource("1")]
+position = Vector2(-75, -61)
+
+[node name="WheatSheaf6" parent="WheatSheafs" index="12" instance=ExtResource("1")]
+position = Vector2(-100, -53)
+
+[node name="WheatSheaf7" parent="WheatSheafs" index="13" instance=ExtResource("1")]
+position = Vector2(-87, -52)
+
+[node name="WheatSheaf10" parent="WheatSheafs" index="14" instance=ExtResource("1")]
+position = Vector2(-72, -52)
+
+[node name="WheatSheaf22" parent="WheatSheafs" index="15" instance=ExtResource("1")]
+position = Vector2(-19, -54)
+
+[node name="WheatSheaf23" parent="WheatSheafs" index="16" instance=ExtResource("1")]
+position = Vector2(-4, -52)
+
+[node name="WheatSheaf20" parent="WheatSheafs" index="17" instance=ExtResource("1")]
+position = Vector2(-46, -54)
+
+[node name="WheatSheaf12" parent="WheatSheafs" index="18" instance=ExtResource("1")]
+position = Vector2(-62, -52)
+
+[node name="WheatSheaf24" parent="WheatSheafs" index="19" instance=ExtResource("1")]
+position = Vector2(10, -50)
+
+[node name="WheatSheaf25" parent="WheatSheafs" index="20" instance=ExtResource("1")]
+position = Vector2(23, -50)
+
+[node name="WheatSheaf21" parent="WheatSheafs" index="21" instance=ExtResource("1")]
+position = Vector2(-33, -54)
+
+[node name="WheatSheaf27" parent="WheatSheafs" index="22" instance=ExtResource("1")]
+position = Vector2(-99, -42)
+
+[node name="WheatSheaf28" parent="WheatSheafs" index="23" instance=ExtResource("1")]
+position = Vector2(-86, -41)
+
+[node name="WheatSheaf29" parent="WheatSheafs" index="24" instance=ExtResource("1")]
+position = Vector2(-71, -41)
+
+[node name="WheatSheaf30" parent="WheatSheafs" index="25" instance=ExtResource("1")]
+position = Vector2(-18, -43)
+
+[node name="WheatSheaf31" parent="WheatSheafs" index="26" instance=ExtResource("1")]
+position = Vector2(-3, -41)
+
+[node name="WheatSheaf32" parent="WheatSheafs" index="27" instance=ExtResource("1")]
+position = Vector2(-45, -43)
+
+[node name="WheatSheaf33" parent="WheatSheafs" index="28" instance=ExtResource("1")]
+position = Vector2(-61, -41)
+
+[node name="WheatSheaf34" parent="WheatSheafs" index="29" instance=ExtResource("1")]
+position = Vector2(11, -39)
+
+[node name="WheatSheaf35" parent="WheatSheafs" index="30" instance=ExtResource("1")]
+position = Vector2(24, -39)
+
+[node name="WheatSheaf37" parent="WheatSheafs" index="31" instance=ExtResource("1")]
+position = Vector2(-32, -43)
+
+[node name="WheatSheaf38" parent="WheatSheafs" index="32" instance=ExtResource("1")]
+position = Vector2(-99, -31)
+
+[node name="WheatSheaf39" parent="WheatSheafs" index="33" instance=ExtResource("1")]
+position = Vector2(-86, -30)
+
+[node name="WheatSheaf40" parent="WheatSheafs" index="34" instance=ExtResource("1")]
+position = Vector2(-71, -30)
+
+[node name="WheatSheaf41" parent="WheatSheafs" index="35" instance=ExtResource("1")]
+position = Vector2(-18, -32)
+
+[node name="WheatSheaf42" parent="WheatSheafs" index="36" instance=ExtResource("1")]
+position = Vector2(-3, -30)
+
+[node name="WheatSheaf43" parent="WheatSheafs" index="37" instance=ExtResource("1")]
+position = Vector2(-45, -32)
+
+[node name="WheatSheaf44" parent="WheatSheafs" index="38" instance=ExtResource("1")]
+position = Vector2(-61, -30)
+
+[node name="WheatSheaf45" parent="WheatSheafs" index="39" instance=ExtResource("1")]
+position = Vector2(11, -28)
+
+[node name="WheatSheaf46" parent="WheatSheafs" index="40" instance=ExtResource("1")]
+position = Vector2(24, -28)
+
+[node name="WheatSheaf48" parent="WheatSheafs" index="41" instance=ExtResource("1")]
+position = Vector2(-32, -32)
+
+[node name="WheatSheaf49" parent="WheatSheafs" index="42" instance=ExtResource("1")]
+position = Vector2(-99, -20)
+
+[node name="WheatSheaf50" parent="WheatSheafs" index="43" instance=ExtResource("1")]
+position = Vector2(-86, -19)
+
+[node name="WheatSheaf51" parent="WheatSheafs" index="44" instance=ExtResource("1")]
+position = Vector2(-71, -19)
+
+[node name="WheatSheaf52" parent="WheatSheafs" index="45" instance=ExtResource("1")]
+position = Vector2(-18, -21)
+
+[node name="WheatSheaf53" parent="WheatSheafs" index="46" instance=ExtResource("1")]
+position = Vector2(-3, -19)
+
+[node name="WheatSheaf54" parent="WheatSheafs" index="47" instance=ExtResource("1")]
+position = Vector2(-45, -21)
+
+[node name="WheatSheaf55" parent="WheatSheafs" index="48" instance=ExtResource("1")]
+position = Vector2(-61, -19)
+
+[node name="WheatSheaf56" parent="WheatSheafs" index="49" instance=ExtResource("1")]
+position = Vector2(11, -17)
+
+[node name="WheatSheaf57" parent="WheatSheafs" index="50" instance=ExtResource("1")]
+position = Vector2(24, -17)
+
+[node name="WheatSheaf59" parent="WheatSheafs" index="51" instance=ExtResource("1")]
+position = Vector2(-32, -21)
+
+[node name="WheatSheaf60" parent="WheatSheafs" index="52" instance=ExtResource("1")]
+position = Vector2(-99, -9)
+
+[node name="WheatSheaf61" parent="WheatSheafs" index="53" instance=ExtResource("1")]
+position = Vector2(-86, -8)
+
+[node name="WheatSheaf62" parent="WheatSheafs" index="54" instance=ExtResource("1")]
+position = Vector2(-71, -8)
+
+[node name="WheatSheaf63" parent="WheatSheafs" index="55" instance=ExtResource("1")]
+position = Vector2(-18, -10)
+
+[node name="WheatSheaf64" parent="WheatSheafs" index="56" instance=ExtResource("1")]
+position = Vector2(-3, -8)
+
+[node name="WheatSheaf65" parent="WheatSheafs" index="57" instance=ExtResource("1")]
+position = Vector2(-45, -10)
+
+[node name="WheatSheaf66" parent="WheatSheafs" index="58" instance=ExtResource("1")]
+position = Vector2(-61, -8)
+
+[node name="WheatSheaf67" parent="WheatSheafs" index="59" instance=ExtResource("1")]
+position = Vector2(11, -6)
+
+[node name="WheatSheaf68" parent="WheatSheafs" index="60" instance=ExtResource("1")]
+position = Vector2(24, -6)
+
+[node name="WheatSheaf70" parent="WheatSheafs" index="61" instance=ExtResource("1")]
+position = Vector2(-32, -10)
+
+[node name="WheatSheaf71" parent="WheatSheafs" index="62" instance=ExtResource("1")]
+position = Vector2(-99, 3)
+
+[node name="WheatSheaf72" parent="WheatSheafs" index="63" instance=ExtResource("1")]
+position = Vector2(-86, 4)
+
+[node name="WheatSheaf73" parent="WheatSheafs" index="64" instance=ExtResource("1")]
+position = Vector2(-71, 4)
+
+[node name="WheatSheaf74" parent="WheatSheafs" index="65" instance=ExtResource("1")]
+position = Vector2(-18, 2)
+
+[node name="WheatSheaf75" parent="WheatSheafs" index="66" instance=ExtResource("1")]
+position = Vector2(-3, 4)
+
+[node name="WheatSheaf76" parent="WheatSheafs" index="67" instance=ExtResource("1")]
+position = Vector2(-45, 2)
+
+[node name="WheatSheaf77" parent="WheatSheafs" index="68" instance=ExtResource("1")]
+position = Vector2(-61, 4)
+
+[node name="WheatSheaf78" parent="WheatSheafs" index="69" instance=ExtResource("1")]
+position = Vector2(11, 6)
+
+[node name="WheatSheaf79" parent="WheatSheafs" index="70" instance=ExtResource("1")]
+position = Vector2(24, 6)
+
+[node name="WheatSheaf81" parent="WheatSheafs" index="71" instance=ExtResource("1")]
+position = Vector2(-32, 2)
+
+[node name="WheatSheaf82" parent="WheatSheafs" index="72" instance=ExtResource("1")]
+position = Vector2(-101, 14)
+
+[node name="WheatSheaf83" parent="WheatSheafs" index="73" instance=ExtResource("1")]
+position = Vector2(-88, 15)
+
+[node name="WheatSheaf84" parent="WheatSheafs" index="74" instance=ExtResource("1")]
+position = Vector2(-73, 15)
+
+[node name="WheatSheaf85" parent="WheatSheafs" index="75" instance=ExtResource("1")]
+position = Vector2(-20, 13)
+
+[node name="WheatSheaf86" parent="WheatSheafs" index="76" instance=ExtResource("1")]
+position = Vector2(-5, 15)
+
+[node name="WheatSheaf87" parent="WheatSheafs" index="77" instance=ExtResource("1")]
+position = Vector2(-47, 13)
+
+[node name="WheatSheaf88" parent="WheatSheafs" index="78" instance=ExtResource("1")]
+position = Vector2(-63, 15)
+
+[node name="WheatSheaf89" parent="WheatSheafs" index="79" instance=ExtResource("1")]
+position = Vector2(9, 17)
+
+[node name="WheatSheaf90" parent="WheatSheafs" index="80" instance=ExtResource("1")]
+position = Vector2(22, 17)
+
+[node name="WheatSheaf92" parent="WheatSheafs" index="81" instance=ExtResource("1")]
+position = Vector2(-34, 13)
+
+[node name="WheatSheaf93" parent="WheatSheafs" index="82" instance=ExtResource("1")]
+position = Vector2(-96, 27)
+
+[node name="WheatSheaf94" parent="WheatSheafs" index="83" instance=ExtResource("1")]
+position = Vector2(-83, 28)
+
+[node name="WheatSheaf95" parent="WheatSheafs" index="84" instance=ExtResource("1")]
+position = Vector2(-68, 28)
+
+[node name="WheatSheaf96" parent="WheatSheafs" index="85" instance=ExtResource("1")]
+position = Vector2(-15, 26)
+
+[node name="WheatSheaf97" parent="WheatSheafs" index="86" instance=ExtResource("1")]
+position = Vector2(0, 28)
+
+[node name="WheatSheaf98" parent="WheatSheafs" index="87" instance=ExtResource("1")]
+position = Vector2(-42, 26)
+
+[node name="WheatSheaf99" parent="WheatSheafs" index="88" instance=ExtResource("1")]
+position = Vector2(-58, 28)
+
+[node name="WheatSheaf100" parent="WheatSheafs" index="89" instance=ExtResource("1")]
+position = Vector2(14, 30)
+
+[node name="WheatSheaf101" parent="WheatSheafs" index="90" instance=ExtResource("1")]
+position = Vector2(27, 30)
+
+[node name="WheatSheaf103" parent="WheatSheafs" index="91" instance=ExtResource("1")]
+position = Vector2(-29, 26)
+
+[node name="WheatSheaf104" parent="WheatSheafs" index="92" instance=ExtResource("1")]
+position = Vector2(-101, 38)
+
+[node name="WheatSheaf105" parent="WheatSheafs" index="93" instance=ExtResource("1")]
+position = Vector2(-88, 39)
+
+[node name="WheatSheaf106" parent="WheatSheafs" index="94" instance=ExtResource("1")]
+position = Vector2(-73, 39)
+
+[node name="WheatSheaf107" parent="WheatSheafs" index="95" instance=ExtResource("1")]
+position = Vector2(-20, 37)
+
+[node name="WheatSheaf108" parent="WheatSheafs" index="96" instance=ExtResource("1")]
+position = Vector2(-5, 39)
+
+[node name="WheatSheaf109" parent="WheatSheafs" index="97" instance=ExtResource("1")]
+position = Vector2(-47, 37)
+
+[node name="WheatSheaf110" parent="WheatSheafs" index="98" instance=ExtResource("1")]
+position = Vector2(-63, 39)
+
+[node name="WheatSheaf111" parent="WheatSheafs" index="99" instance=ExtResource("1")]
+position = Vector2(9, 41)
+
+[node name="WheatSheaf112" parent="WheatSheafs" index="100" instance=ExtResource("1")]
+position = Vector2(22, 41)
+
+[node name="WheatSheaf114" parent="WheatSheafs" index="101" instance=ExtResource("1")]
+position = Vector2(-34, 37)
+
+[node name="DoorTrigger" parent="." index="2" instance=ExtResource("2")]
+position = Vector2(0, 127)
+scale = Vector2(2, 0.1)
+target_scene_path = "res://scenes/environments/World.tscn"
+
+[node name="DoorTriggerUp" parent="." index="3" instance=ExtResource("2")]
+position = Vector2(94, -110)
+scale = Vector2(2, 0.1)
+target_scene_path = "res://scenes/environments/InsideClockTowerUp.tscn"
+
+[node name="Niko" parent="Node2D" index="0"]
+position = Vector2(0, 104)
