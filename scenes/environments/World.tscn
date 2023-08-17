@@ -90,7 +90,7 @@ position = Vector2(168, 936)
 position = Vector2(-272, 928)
 
 [node name="Niko" parent="YSort" instance=ExtResource("5")]
-position = Vector2(-291, -567)
+position = Vector2(-31, 15)
 
 [node name="PickableItem" parent="YSort" instance=ExtResource("10")]
 position = Vector2(-160, -128)
