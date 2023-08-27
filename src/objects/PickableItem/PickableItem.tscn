@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://wdrfxow5yi1j"]
+
+[ext_resource type="Script" path="res://src/objects/PickableItem/PickableItem.gd" id="1_a1sol"]
+[ext_resource type="Texture2D" uid="uid://q6yl7ooi0o46" path="res://assets/textures/items/lightbulb.png" id="2_ocinr"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(36, 38)
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(40, 42)
+
+[node name="PickableItem" type="StaticBody2D"]
+script = ExtResource("1_a1sol")
+item_name = "lightbulb"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ocinr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("1")
+
+[node name="PickArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PickArea"]
+position = Vector2(0, 3)
+shape = SubResource("2")
+
+[connection signal="body_entered" from="PickArea" to="." method="_on_pick_area_body_entered"]

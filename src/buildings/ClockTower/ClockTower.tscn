@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://kxmcfno6jpbd"]
+
+[ext_resource type="Texture2D" uid="uid://bh73ud3utwnt2" path="res://assets/textures/buildings/clock_tower.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://cgpqpi1fg7u5r" path="res://src/triggers/DialogTrigger/DialogTrigger.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dxmd0wmlvyvnb" path="res://src/triggers/DoorTrigger/DoorTrigger.tscn" id="3"]
+
+[node name="ClockTower" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 0)
+texture = ExtResource("1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(51, 59, 54, -10, 25, -21, 26, -36, 0, -57, -27, -36, -26, -23, -54, -10, -52, 59)
+
+[node name="DialogTrigger" parent="." instance=ExtResource("2")]
+position = Vector2(0, 60)
+scale = Vector2(5.2, 0.1)
+dialog_name = "clock_tower"
+
+[node name="DoorTrigger" parent="." instance=ExtResource("3")]
+position = Vector2(0, 59)
+scale = Vector2(1.2, 0.1)
+target_scene_path = "res://src/environments/InsideClockTower/InsideClockTower.tscn"

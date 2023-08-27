@@ -1,2 +1,14 @@
-res://scenes/environments/World.tscn
+res://src/environments/World/World.tscn
+res://assets/resources/InsideClockTowerTileset.tres
+res://src/buildings/ClockTower/ClockTower.tscn
+res://src/triggers/DoorTrigger/DoorTrigger.tscn
+res://src/environments/BaseScene/BaseScene.tscn
+res://src/environments/InsideClockTower/InsideClockTower.tscn
+res://src/environments/InsideClockTowerUp/InsideClockTowerUp.tscn
+res://src/characters/Niko/Niko.tscn
+res://src/uis/UserInterface/UserInterface.tscn
 res://assets/resources/WorldTileset.tres
+res://src/characters/Niko/Niko.gd
+res://src/triggers/DoorTrigger/DoorTrigger.gd
+res://src/characters/TestCharacter/TestCharacter.tscn
+res://src/utils/AllDialogs.gd

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0as0argu8al8"]
+
+[ext_resource type="Texture2D" uid="uid://dm30bl3e5jqse" path="res://assets/textures/faces/annas.png" id="1_402nm"]
+[ext_resource type="PackedScene" uid="uid://cgpqpi1fg7u5r" path="res://src/triggers/DialogTrigger/DialogTrigger.tscn" id="2_43iaq"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(22.2222, 12.5)
+
+[node name="TestCharacter" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5.96046e-08, 0)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_402nm")
+
+[node name="DialogTrigger" parent="." instance=ExtResource("2_43iaq")]
+scale = Vector2(2, 3.4)
+dialog_name = "annas_meet_conversation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.8, 3.2)
+shape = SubResource("1")

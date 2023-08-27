@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://t8tecida2fa1"]
+
+[ext_resource type="Texture2D" uid="uid://cksf86sf2sepn" path="res://assets/textures/buildings/house.png" id="1"]
+[ext_resource type="PackedScene" uid="uid://cgpqpi1fg7u5r" path="res://src/triggers/DialogTrigger.tscn" id="2"]
+
+[node name="House" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(49, 54, 51, -20, 0, -43, -50, -21, -48, 54)
+
+[node name="DialogTrigger" parent="." instance=ExtResource("2")]
+position = Vector2(0, 54)
+scale = Vector2(4.8, 0.1)
+dialog_name = "house"

@@ -11,15 +11,17 @@ config_version=5
 [application]
 
 config/name="Home World"
-run/main_scene="res://scenes/environments/World.tscn"
+run/main_scene="res://src/environments/World/World.tscn"
 config/features=PackedStringArray("4.1")
+boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/image="res://assets/textures/icons/splash_screen.png"
 config/icon="res://icon.png"
 
 [autoload]
 
-AllDialogs="*res://scripts/utils/AllDialogs.gd"
-Global="*res://scripts/utils/Global.gd"
-AllItems="*res://scripts/utils/AllItems.gd"
+AllDialogs="*res://src/utils/AllDialogs.gd"
+Global="*res://src/utils/Global.gd"
+AllItems="*res://src/utils/AllItems.gd"
 
 [display]
 

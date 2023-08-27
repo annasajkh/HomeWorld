@@ -1,0 +1,6 @@
+TileMap
+AnimationPlayer
+AnimationTree
+TextureRect
+MeshInstance2D
+Node2D
